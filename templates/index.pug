@@ -1,0 +1,101 @@
+doctype html
+
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    //- referencement
+    title  @ padagraph
+    meta(name='keyword' content='padagraph opendata graph edition')
+    meta(name='author' content='ynnk, a-tsioh')
+    meta(name='description' content='Collaborative graph edition.')
+
+    link(rel='stylesheet', href="node_modules/semantic-ui-css/semantic.min.css", type='text/css')
+
+    style.
+        .images img {
+            margin: 12px !important;
+            vertical-align: middle;
+            -webkit-filter: grayscale(1);
+            -moz-filter: grayscale(1);
+            -ms-filter: grayscale(1);
+            -o-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+            
+  body
+    .ui.hidden.divider
+
+    .ui.page.grid
+
+      div.row
+        div.center.aligned.column
+            h1.ui.header
+                i.dore.icons
+                    i.comment.outline.icon
+                    i.tiny.share.alternate.icon(style={left:'13px'})
+                |padagraph.io
+                .sub.header "Open your graph and your mind will follow"
+                
+            .ui.hidden.divider
+            .ui.divider
+    
+      .row
+        div.center.aligned.column
+           iframe(src="https://botapad.padagraph.io/import/igraph.html?s=https://ethercalc.org/foldr-pdgsolar&no-labels=1&buttons=0&bgcolor=FFF&auto_rotate=1" style="width:100%; height:400px; border:none")
+
+      .ui.divider
+      
+      .row(style="width:80%;")
+        .center.aligned.column
+            h3.ui.small.icon.header
+             i.folder.outline.icon
+             .content
+                | Foldr
+                .sub.header Use a foldr to aggregate data, documentation, media materials and external resources on the same page to create a graph visualisation of your data.
+      .row
+       .three.column.divided.stackable.center.aligned.ui.grid  
+        .center.aligned.column
+           .ui.icon.header
+             i.table.circular.icon
+             | Edit data in spreadsheets
+        .center.aligned.column
+           .ui.icon.header
+             i.users.circular.icon
+             | Collaborate online
+        .center.aligned.column
+           .ui.icon.header
+             i.download.circular.icon
+             | Import data from anywhere 
+      .row
+        .center.aligned.column
+            a.ui.button(href="http://foldr.padagraph.io") Go to foldr 
+
+
+      .ui.divider
+           
+      .row
+        .center.aligned.column
+           .ui.images
+               img.ui.small.image(src="images/istex_logo.svg") 
+               img.ui.tiny.image(src="images/logo-cnrs-simple.svg") 
+               img.ui.small.image(src="images/ul.jpeg") 
+               img.ui.small.image(src="images/Logo_Atilf_120_b.jpg") 
+               img.ui.small.image(src="images/ENP_Logo_All.png") 
+           
+      .ui.divider
+
+      .row
+        .center.aligned.column
+            a(href='https://www.facebook.com/padagraph', target='_blank')
+                i.big.facebook.grey.icon
+            a(href='https://www.twitter.com/padagraph', target='_blank')
+                i.big.twitter.grey.icon
+            a(href='https://github.com/padagraph', target='_blank')
+                i.big.github.grey.icon
+
+      .ui.divider
+
+      .ui.hidden.divider
